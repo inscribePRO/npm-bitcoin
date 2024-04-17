@@ -1,1 +1,1 @@
-# npm-bitcoin
+# @inscribepro/bitcoin

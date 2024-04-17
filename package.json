@@ -1,0 +1,33 @@
+{
+  "name": "@inscribepro/bitcoin",
+  "version": "0.1.1",
+  "description": "bitcoin",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "author": "@web3jt",
+  "license": "GPL-3.0-only",
+  "homepage": "https://github.com/inscribePRO/npm-bitcoin#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inscribePRO/npm-bitcoin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/inscribePRO/npm-bitcoin/issues"
+  },
+  "dependencies": {
+    "@bitcoinerlab/secp256k1": "^1.1.1",
+    "@cmdcode/tapscript": "^1.4.6",
+    "bip32": "^4.0.0",
+    "bitcoinjs-lib": "^6.1.5"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.12.7",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2",
+    "typescript": "^5.4.5"
+  }
+}
