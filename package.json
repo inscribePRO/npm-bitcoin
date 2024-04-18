@@ -1,6 +1,6 @@
 {
   "name": "@inscribepro/bitcoin",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "bitcoin",
   "main": "src/index.ts",
   "scripts": {
