@@ -30,7 +30,7 @@ function _nameToNetwork(name_: BitcoinNetworks): bitcoin.networks.Network {
 }
 
 
-export const vsizeOfP2wpkhPSBT = (outputs_: TxOutput[], options_?: {
+export const p2wpkh = (outputs_: TxOutput[], options_?: {
   inputCount?: number;
   changeCount?: number;
 }): number => {

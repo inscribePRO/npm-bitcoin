@@ -1,8 +1,8 @@
-import { vsizeOfP2wpkhPSBT } from '../src/index';
+import { p2wpkh } from '../src/index';
 
 describe('estimate vsize', () => {
   it('p2wpkh: 1', () => {
-    const vsize = vsizeOfP2wpkhPSBT(
+    const vsize = p2wpkh(
       [
         { address: 'bc1qvudq72lumyweraq639nkv7r2pr3np6mtrft02t', value: 10000 },
       ]
@@ -12,7 +12,7 @@ describe('estimate vsize', () => {
   });
 
   it('p2wpkh: 2', () => {
-    const vsize = vsizeOfP2wpkhPSBT(
+    const vsize = p2wpkh(
       [
         { address: 'bc1qvudq72lumyweraq639nkv7r2pr3np6mtrft02t', value: 10000 },
         { address: 'bc1quvl3t9nv6w3skjmv2fvslyh4gct5ku8r5g0ras', value: 10000 },
@@ -23,7 +23,7 @@ describe('estimate vsize', () => {
   });
 
   it('p2tr: 1', () => {
-    const vsize = vsizeOfP2wpkhPSBT(
+    const vsize = p2wpkh(
       [
         { address: 'bc1p7aexl7v5vp839tj3z73wwps5r3ewqwq8ttqxngs090jnwlzqg6nq67geuw', value: 10000 },
       ]
@@ -33,7 +33,7 @@ describe('estimate vsize', () => {
   });
 
   it('p2tr: 3', () => {
-    const vsize = vsizeOfP2wpkhPSBT(
+    const vsize = p2wpkh(
       [
         { address: 'bc1p7aexl7v5vp839tj3z73wwps5r3ewqwq8ttqxngs090jnwlzqg6nq67geuw', value: 10000 },
         { address: 'bc1pmnrvy87m4cjau0p0tm6qy3sfeyptfmf7d89zerq2xelfxeddk4ss2hew8f', value: 10000 },
@@ -45,7 +45,7 @@ describe('estimate vsize', () => {
   });
 
   it('p2sh: 1', () => {
-    const vsize = vsizeOfP2wpkhPSBT(
+    const vsize = p2wpkh(
       [
         { address: '3CoMxBzdqsRB7Vj6uPkfUQxL6HhFCDx2oQ', value: 10000 },
       ]
@@ -55,7 +55,7 @@ describe('estimate vsize', () => {
   });
 
   it('p2sh: 4', () => {
-    const vsize = vsizeOfP2wpkhPSBT(
+    const vsize = p2wpkh(
       [
         { address: '3CoMxBzdqsRB7Vj6uPkfUQxL6HhFCDx2oQ', value: 10000 },
         { address: '39nez93AVBK8dfnbCKmjqm8ir3TauMMD9S', value: 10000 },
@@ -68,7 +68,7 @@ describe('estimate vsize', () => {
   });
 
   it('p2pkh: 1', () => {
-    const vsize = vsizeOfP2wpkhPSBT(
+    const vsize = p2wpkh(
       [
         { address: '1AQ9pPWFJWfCZ4MaErgz8uKhLWAFuBfZyP', value: 10000 },
       ]
@@ -78,7 +78,7 @@ describe('estimate vsize', () => {
   });
 
   it('p2pkh: 5', () => {
-    const vsize = vsizeOfP2wpkhPSBT(
+    const vsize = p2wpkh(
       [
         { address: '1AQ9pPWFJWfCZ4MaErgz8uKhLWAFuBfZyP', value: 10000 },
         { address: '1MiZxiqeKGo498FjdfXuUMHhmqBSFrx7bD', value: 10000 },
