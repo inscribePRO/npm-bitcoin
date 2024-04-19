@@ -1,7 +1,7 @@
 {
-  "name": "@inscribepro/bitcoin",
-  "version": "0.1.4",
-  "description": "bitcoin",
+  "name": "@inscribepro/vsize",
+  "version": "0.1.0",
+  "description": "vsize",
   "main": "src/index.ts",
   "scripts": {
     "build": "tsc",
